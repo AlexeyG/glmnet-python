@@ -1,7 +1,10 @@
 import numpy as np
 from scipy.sparse import issparse, isspmatrix_csc
-import matplotlib
-import matplotlib.pyplot as plt 
+try :
+    import matplotlib
+    import matplotlib.pyplot as plt
+except :
+    pass
 from glmnet_config import (_DEFAULT_THRESH,
                            _DEFAULT_FLMIN,
                            _DEFAULT_NLAM)

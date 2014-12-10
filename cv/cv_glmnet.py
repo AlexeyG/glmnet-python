@@ -1,7 +1,10 @@
 import numpy as np
 from sklearn.externals.joblib import Parallel, delayed
-import matplotlib
-import matplotlib.pyplot as plt 
+try :
+    import matplotlib
+    import matplotlib.pyplot as plt 
+except :
+    pass
 from fit_and_scorers import fit_and_score_switch
 from fold_generators import unweighted_k_fold, weighted_k_fold
 
